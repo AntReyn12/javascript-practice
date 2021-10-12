@@ -60,3 +60,29 @@ function multiply() {
   totalNum = num1 * num2;
   sumSpan.textContent = "Sum: " + totalNum;
 }
+
+//*BUILD ARRAYS WITH STRINGS*//
+//let featuredPosts = [
+//"Check out my Netflix clone",
+//"Here's code for my project",
+//"I've just relaunched my portfolio",
+//];
+//const mySkills = ["HTML", "CSS", "JS", "React.JS", "BootStrap"];
+
+//*MAKE ARRAY WITH THE 3 PRIMITIVE DATA TYPES *//
+//const aboutMe = ["Anthony", 25, true];
+//console.log(aboutMe);
+
+//*PUSH NEW MESSAGE TO AN EXISITING ARRAY *//
+let messages = [
+  "Hey, how is it going?",
+  "I'm great, thanks! How about you?",
+  "All good. Been working on my portfolio lately.",
+];
+
+let newMessage = "Same here!";
+
+messages.push(newMessage);
+messages.pop();
+
+console.log(messages);
