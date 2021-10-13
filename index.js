@@ -73,16 +73,37 @@ function multiply() {
 //const aboutMe = ["Anthony", 25, true];
 //console.log(aboutMe);
 
-//*PUSH NEW MESSAGE TO AN EXISITING ARRAY *//
-let messages = [
-  "Hey, how is it going?",
-  "I'm great, thanks! How about you?",
-  "All good. Been working on my portfolio lately.",
-];
+//*PUSH AND POP NEW MESSAGE TO AN EXISITING ARRAY *//
+//let messages = [
+//"Hey, how is it going?",
+//"I'm great, thanks! How about you?",
+//"All good. Been working on my portfolio lately.",
+//];
+//let newMessage = "Same here!";
+//messages.push(newMessage);
+//messages.pop();
+//console.log(messages);
 
-let newMessage = "Same here!";
+//*COUNTING IN JAVASCRIPT*//
+//for (let count = 10; count < 21; count += 1) {
+//console.log(count);
+//}
 
-messages.push(newMessage);
-messages.pop();
+//*CREATE A FOR LOOP*//
+//for (let i = 10; i <= 100; i += 10) {
+//console.log(i);
+//}
 
-console.log(messages);
+//*FOR LOOPS AND ARRAYS*//
+//let cards = [7, 3, 9];
+//for (i = 0; i < cards.length; i++) {
+//console.log(cards[i]);
+//}
+
+let greetingEl = document.querySelector(".greeting-el");
+let sentence = ["Hello", "my", "name", "is", "Anthony"];
+
+for (let i = 0; i < sentence.length; i++) {
+  greetingEl.textContent += sentence[i] + " ";
+  console.log(sentence[i]);
+}
