@@ -126,3 +126,14 @@ function multiply() {
 //}
 //let raceTimeTotal = totalRaceTime();
 //console.log(raceTimeTotal);
+
+//*GENERATING RANDOM NUMBERS FROM 1-6*//
+let randomNumber = Math.random() * 6;
+let flooredNumber = Math.floor(3.85632);
+
+function rollDice() {
+  let randomFlooredNumber = Math.floor(Math.random() * 6) + 1;
+  return randomFlooredNumber;
+}
+
+console.log(rollDice());
