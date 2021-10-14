@@ -100,10 +100,29 @@ function multiply() {
 //console.log(cards[i]);
 //}
 
-let greetingEl = document.querySelector(".greeting-el");
-let sentence = ["Hello", "my", "name", "is", "Anthony"];
+//*FOR LOOP AND ARRAYS EXAMPLE*//
+//let greetingEl = document.querySelector(".greeting-el");
+//let sentence = ["Hello", "my", "name", "is", "Anthony"];
+//for (let i = 0; i < sentence.length; i++) {
+//greetingEl.textContent += sentence[i] + " ";
+//console.log(sentence[i]);
+//}
 
-for (let i = 0; i < sentence.length; i++) {
-  greetingEl.textContent += sentence[i] + " ";
-  console.log(sentence[i]);
-}
+//*RETURNING VALUES IN A FUNCTION*//
+//let player1Time = 102;
+//let player2Time = 105;
+//function getFastestTime() {
+//if (player1Time < player2Time) {
+//return player1Time;
+//} else if (player2Time < player1Time) {
+//return player2Time;
+//} else {
+//return "tie!";
+//}
+//}
+//let fastestRacer = getFastestTime();
+//function totalRaceTime() {
+//return player1Time + player2Time;
+//}
+//let raceTimeTotal = totalRaceTime();
+//console.log(raceTimeTotal);
