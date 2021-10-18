@@ -157,13 +157,24 @@ function multiply() {
 //}
 
 //*THE LOGICAL 'OR' OPERATOR *//
-const likesDocumentaries = true;
-const likesStartups = true;
+//const likesDocumentaries = true;
+//const likesStartups = true;
+//if (likesDocumentaries === true || likesStartups === true) {
+//recommendMovie();
+//}
+//function recommendMovie() {
+//console.log("Hey, check out this new film we think you will like!");
+//}
 
-if (likesDocumentaries === true || likesStartups === true) {
-  recommendMovie();
-}
+//*OBJECTS*//
+let course = {
+  title: "Learn CSS Grid for free",
+  lessons: 16,
+  creator: "Anthony",
+  length: 63,
+  level: 2,
+  isFree: true,
+  tags: ["html", "css"],
+};
 
-function recommendMovie() {
-  console.log("Hey, check out this new film we think you will like!");
-}
+console.log(course.tags[0]);
