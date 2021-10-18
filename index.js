@@ -128,12 +128,42 @@ function multiply() {
 //console.log(raceTimeTotal);
 
 //*GENERATING RANDOM NUMBERS FROM 1-6*//
-let randomNumber = Math.random() * 6;
-let flooredNumber = Math.floor(3.85632);
+//let randomNumber = Math.random() * 6;
+//let flooredNumber = Math.floor(3.85632);
+//function rollDice() {
+//let randomFlooredNumber = Math.floor(Math.random() * 6) + 1;
+//return randomFlooredNumber;
+//}
+//console.log(rollDice());
 
-function rollDice() {
-  let randomFlooredNumber = Math.floor(Math.random() * 6) + 1;
-  return randomFlooredNumber;
+//*THE LOGICAL 'AND' OPERATOR*//
+//let hasCompletedCourse = true;
+//let givesCertificate = true;
+//if (hasCompletedCourse === true && givesCertificate === true) {
+//generateCertificate();
+//}
+//function generateCertificate() {
+//console.log("Generating certificate....");
+//}
+
+//*WRITE YOUR FIRST LOGICAL OPERATOR*//
+//let hasSolvedChallenge = false;
+//let hasHintsLeft = false;
+//if (hasSolvedChallenge === false && hasHintsLeft === false) {
+//showSolution();
+//}
+//function showSolution() {
+//console.log("Showing the solution...");
+//}
+
+//*THE LOGICAL 'OR' OPERATOR *//
+const likesDocumentaries = true;
+const likesStartups = true;
+
+if (likesDocumentaries === true || likesStartups === true) {
+  recommendMovie();
 }
 
-console.log(rollDice());
+function recommendMovie() {
+  console.log("Hey, check out this new film we think you will like!");
+}
