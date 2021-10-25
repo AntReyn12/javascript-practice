@@ -167,14 +167,76 @@ function multiply() {
 //}
 
 //*OBJECTS*//
-let course = {
-  title: "Learn CSS Grid for free",
-  lessons: 16,
-  creator: "Anthony",
-  length: 63,
-  level: 2,
-  isFree: true,
-  tags: ["html", "css"],
-};
+//let course = {
+//title: "Learn CSS Grid for free",
+//lessons: 16,
+//creator: "Anthony",
+//length: 63,
+//level: 2,
+//isFree: true,
+//tags: ["html", "css"],
+//};
+//console.log(course.tags[0]);
 
-console.log(course.tags[0]);
+//*OBJECTS AND FUNCTIONS*//
+//const person = {
+//firstName: "Anthony",
+//age: 25,
+//country: "USA",
+//};
+//const {firstName, age, country} = person;
+//function logData() {
+//console.log(`${firstName} is ${age} years old and lives in ${country}.`);
+//console.log(
+//firstName + " is " + age + " years old and lives in " + country + "."
+//);
+//}
+//logData();
+
+//*IF ELSE*//
+//let age = 66;
+//if (age < 6) {
+//console.log("free");
+//} else if (age < 18) {
+//console.log("child discount");
+//} else if (age < 27) {
+//console.log("student discount");
+//} else if (age < 67) {
+//console.log("full price");
+//} else {
+//console.log("senior citizen discount");
+//}
+
+//*LOOPS AND ARRAYS*//
+//let largeCountries = ["China", "India", "USA", "Indonesia", "Pakistan"];
+//console.log("The 5 largest countries in the world: ");
+//for (let i = 0; i < largeCountries.length; i++) {
+//console.log("- " + largeCountries[i]);
+//}
+
+//*PUSH, POP, UNSHIFT, SHIFT CHALLENGE*//
+//let largeCountries = ["Tuvalu", "India", "USA", "Indonesia", "Monaco"];
+//console.log(largeCountries);
+//largeCountries.pop();
+//largeCountries.push("Pakistan");
+//console.log(largeCountries);
+//largeCountries.shift();
+//largeCountries.unshift("China");
+//console.log(largeCountries);
+
+//*LOGICAL 'AND' OPERATOR*//
+//let dayOfMonth = 13;
+//let weekday = "Friday";
+//if (dayOfMonth === 13 && weekday === "Friday") {
+//console.log("😱");
+//}
+
+//*ROCK, PAPER, SCISSORS*//
+let hands = ["rock", "paper", "scissor"];
+
+function returnRandomItem() {
+  let randomReturn = Math.floor(Math.random() * hands.length);
+  return hands[randomReturn];
+}
+
+console.log(returnRandomItem());
