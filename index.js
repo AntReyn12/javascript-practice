@@ -31,35 +31,33 @@
 //function errorButtonClicked() {
 //errorMessage.textContent = "Something went wrong, please try again.";
 //}
-const num1Span = document.getElementById("num1");
-const num2Span = document.getElementById("num2");
-const sumSpan = document.getElementById("sum");
 
-let num1 = 12;
-let num2 = 6;
-let totalNum = 0;
-num1Span.textContent = num1;
-num2Span.textContent = num2;
+//*CALCULATOR*//
+//const num1Span = document.getElementById("num1");
+//const num2Span = document.getElementById("num2");
+//const sumSpan = document.getElementById("sum");
+//let num1 = 12;
+//let num2 = 6;
+//let totalNum = 0;
+//num1Span.textContent = num1;
+//num2Span.textContent = num2;
+//function add() {
+//totalNum = num1 + num2;
+//sumSpan.textContent = "Sum: " + totalNum;
+//}
+//function subtract() {
+//totalNum = num1 - num2;
+//sumSpan.textContent = "Sum: " + totalNum;
+//}
+//function divide() {
+//totalNum = num1 / num2;
+//sumSpan.textContent = "Sum: " + totalNum;
+//}
 
-function add() {
-  totalNum = num1 + num2;
-  sumSpan.textContent = "Sum: " + totalNum;
-}
-
-function subtract() {
-  totalNum = num1 - num2;
-  sumSpan.textContent = "Sum: " + totalNum;
-}
-
-function divide() {
-  totalNum = num1 / num2;
-  sumSpan.textContent = "Sum: " + totalNum;
-}
-
-function multiply() {
-  totalNum = num1 * num2;
-  sumSpan.textContent = "Sum: " + totalNum;
-}
+//function multiply() {
+//totalNum = num1 * num2;
+//sumSpan.textContent = "Sum: " + totalNum;
+//}
 
 //*BUILD ARRAYS WITH STRINGS*//
 //let featuredPosts = [
@@ -232,11 +230,16 @@ function multiply() {
 //}
 
 //*ROCK, PAPER, SCISSORS*//
-let hands = ["rock", "paper", "scissor"];
+//let hands = ["rock", "paper", "scissor"];
+//function returnRandomItem() {
+//let randomReturn = Math.floor(Math.random() * hands.length);
+//return hands[randomReturn];
+//}
+//console.log(returnRandomItem());
 
-function returnRandomItem() {
-  let randomReturn = Math.floor(Math.random() * hands.length);
-  return hands[randomReturn];
-}
+//*WRITE YOUR FIRST EVENT LISTENER*//
+const boxEl = document.querySelector("#box");
 
-console.log(returnRandomItem());
+boxEl.addEventListener("click", function () {
+  console.log("I want to open the box!");
+});
