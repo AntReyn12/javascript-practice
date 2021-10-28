@@ -238,8 +238,16 @@
 //console.log(returnRandomItem());
 
 //*WRITE YOUR FIRST EVENT LISTENER*//
+//const boxEl = document.querySelector("#box");
+//boxEl.addEventListener("click", function () {
+//console.log("I want to open the box!");
+//});
+
+//*USING .INNERTHML*//
 const boxEl = document.querySelector("#box");
 
-boxEl.addEventListener("click", function () {
-  console.log("I want to open the box!");
-});
+boxEl.innerHTML = "<button onclick='buy()'> Buy! </button> ";
+
+function buy() {
+  boxEl.innerHTML += "<p>Thank you for buying!</p>";
+}
