@@ -244,10 +244,38 @@
 //});
 
 //*USING .INNERTHML*//
-const boxEl = document.querySelector("#box");
+//const boxEl = document.querySelector("#box");
+//boxEl.innerHTML = "<button onclick='buy()'> Buy! </button> ";
+//function buy() {
+//boxEl.innerHTML += "<p>Thank you for buying!</p>";
+//}
 
-boxEl.innerHTML = "<button onclick='buy()'> Buy! </button> ";
+//*WRITE YOUR FIRST FUNCTION PARAMETER*//
+//const welcomeEl = document.querySelector("#welcome-el");
+//function greetUser(greeting) {
+//welcomeEl.textContent = `${greeting}, Anthony!`;
+//}
+//greetUser("Welcome back");
 
-function buy() {
-  boxEl.innerHTML += "<p>Thank you for buying!</p>";
+//*WRITE FUNCTION WITH MULTIPLE PARAMETERS*//
+//const welcomeEl = document.querySelector("#welcome-el");
+//function greetUser(greeting, firstName, emoji) {
+//welcomeEl.textContent = `${greeting}, ${firstName}! ${emoji}`;
+//}
+//greetUser("Welcome back", "Anthony", "😄");
+
+//*USE NUMBERS AS PARAMETERS IN FUNCTIONS*//
+//function add(num1, num2) {
+//return num1 + num2;
+//}
+//console.log(add(3, 4));
+//console.log(add(9, 201));
+
+//*ARRAYS AS PARAMETERS*//
+const array = ["first", "second", "third"];
+
+function getFirst(arr) {
+  return arr[0];
 }
+
+console.log(getFirst(array));
