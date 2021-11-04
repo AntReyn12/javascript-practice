@@ -272,10 +272,90 @@
 //console.log(add(9, 201));
 
 //*ARRAYS AS PARAMETERS*//
-const array = ["first", "second", "third"];
+//const array = ["first", "second", "third"];
+//function getFirst(arr) {
+//return arr;
+//}
+//console.log(getFirst(array));
 
-function getFirst(arr) {
-  return arr[0];
+//*LET AND CONST*//
+//const player = "Per";
+//const opponent = "Nick";
+//const game = "AmazingFighter";
+//let points = 0;
+//let hasWon = false;
+//points += 100;
+//hasWon = true;
+//if (hasWon) {
+//console.log(`${player} got ${points} points and won the ${game} game!`);
+//} else {
+//console.log(`The winner is ${opponent}! ${player} lost the game.`);
+//}
+
+//*LOG OUT ITEMS IN AN ARRAY*//
+//let myCourses = [
+//"Learn CSS Animations",
+//"UI Design Fundamentals",
+//"Intro to Clean Code",
+//];
+//function logItems(array) {
+//for (i = 0; i < array.length; i++) {
+//console.log(array[i]);
+//}
+//}
+//logItems(myCourses);
+
+//*SAVE A VALUE TO LOCAL STORAGE*//
+//localStorage.setItem("myCredits", "200");
+//let credits = localStorage.getItem("myCredits");
+//console.log(credits);
+
+//*addEVENTLISTENER AND OBJECT IN ARRAY*//
+//const buttonEl = document.querySelector("#score-el");
+//let playerScores = [
+//{
+//player: "Jane",
+//score: 52,
+//},
+//{
+//player: "Mark",
+//score: 41,
+//},
+//];
+//buttonEl.addEventListener("click", function () {
+//console.log(playerScores[0].score);
+//});
+
+//*GENERATE SENTENCE*//
+//function generateSentence(desc, arr) {
+//let baseString = `The ${arr.length} ${desc} are `;
+//const lastIndex = arr.length - 1;
+//for (let i = 0; i < arr.length; i++) {
+//if (i === lastIndex) {
+//baseString += arr[i];
+//} else {
+//baseString += arr[i] + ", ";
+//}
+//}
+//return baseString;
+//}
+//const sentence = generateSentence("largest countries", [
+//"China",
+//"USA",
+//"India",
+//]);
+//console.log(sentence);
+
+//*RENDER IMAGES*//
+const imageDiv = document.querySelector(".team-img");
+const imgs = ["img/img1.jpeg", "img/img2.jpeg", "img/img3.jpeg"];
+
+function render() {
+  let imageList = "";
+  for (let i = 0; i < imgs.length; i++) {
+    imageList += `<img alt="Employee" src = "${imgs[i]}" >`;
+  }
+  imageDiv.innerHTML = imageList;
 }
 
-console.log(getFirst(array));
+render();
